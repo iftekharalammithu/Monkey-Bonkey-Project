@@ -7,8 +7,8 @@
     <!-- Add a catchy tagline here! -->
     Bringing your web projects to life with Framer Motion!
   </p>
+  <img src="image.png" alt="Monkey Bonkey" width="500">
 </div>
-![alt text](image.png)
 
 ## ✨ About
 
