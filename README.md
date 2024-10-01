@@ -7,8 +7,8 @@
     <!-- Add a catchy tagline here! -->
     Bringing your web projects to life with Framer Motion!
   </p>
-![alt text](image.png)
 </div>
+![alt text](image.png)
 
 ## ✨ About
 
