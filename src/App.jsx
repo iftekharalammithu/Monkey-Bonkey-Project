@@ -6,6 +6,7 @@ import Cards from "./Component/Cards";
 import FullPage from "./Component/FullPage";
 import TextScetion from "./Component/TextScetion";
 import Footer from "./Component/Footer";
+import Zoomin from "./Component/Zoomin";
 
 const App = () => {
   return (
@@ -45,22 +46,21 @@ const App = () => {
           <TextScetion />
         </SectionLayout>
         <SectionLayout>
-          <motion.div
-            className="video"
-            ref={video}
-            style={{
-              opacity,
-              scale,
-            }}
-          >
+          <div className="video p-8 bg-[#161616] rounded-2xl">
             <iframe
+              className="border-none w-full h-[52rem]"
               src="https://www.youtube.com/embed/ER6EO4B7V68?si=HwUgNtM0rzfF20sG"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
-          </motion.div>
+          </div>
         </SectionLayout>
+
+        <SectionLayout>
+          <Zoomin />
+        </SectionLayout>
+
         <SectionLayout>
           <TextScetion />
         </SectionLayout>
