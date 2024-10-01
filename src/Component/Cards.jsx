@@ -2,8 +2,8 @@ import React from "react";
 
 const Cards = ({ title, description, image }) => {
   return (
-    <div className="h-full  relative p-6 rounded-lg border border-[var(--color-border)] transition-all duration-300 ">
-      <div className="">
+    <div className="h-full  relative p-6 rounded-lg border border-[var(--color-border)] transition-all duration-300 ease-in-out ">
+      <div className="h-full w-full">
         <p className="new absolute top-12 right-10 z-10 bg-[#222260] text-white px-1 py-2 rounded-lg font-semibold text-base">
           New
         </p>

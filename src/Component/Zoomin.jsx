@@ -36,12 +36,10 @@ const Zoomin = () => {
           style={{
             transform: hover.transform,
           }}
-          className="object-cover  object-top scale-125 bg-[var(--color-bg)]"
+          className="object-cover  object-center scale-125 "
         />
 
         <img
-          height={500}
-          width={500}
           src="/images/arm2.jpg"
           alt=""
           style={{
@@ -52,8 +50,6 @@ const Zoomin = () => {
         />
 
         <img
-          height={500}
-          width={500}
           src="/images/arm.jpg"
           alt=""
           style={{

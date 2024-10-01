@@ -20,7 +20,7 @@ const Header = () => {
     y: -5,
     z: 11,
   });
-  console.log(transform, transition);
+  // console.log(transform, transition);
   return (
     <div ref={hero}>
       <nav className="mx-16  border-b-[1px]  min-h-[10vh] flex justify-between items-center border-gray-700">
