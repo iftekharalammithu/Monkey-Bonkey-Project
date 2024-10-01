@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public\logo.jpeg" alt="Monkey Bonkey Logo" width="200">
+  <img src="public\logo.jpeg" alt="Monkey Bonkey Logo" width="100">
 
   <h1>🐒 Monkey Bonkey 🍌</h1>
 
