@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Header from "./Component/Header/Header";
 import SectionLayout from "./Component/SectionLayout";
 import { cards } from "./Utils/Card";
@@ -9,6 +9,7 @@ import Footer from "./Component/Footer";
 import Zoomin from "./Component/Zoomin";
 import Horizontal from "./Component/Horizontal";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Lenis from "lenis";
 
 const App = () => {
   const videoRef = useRef(null);
@@ -25,6 +26,25 @@ const App = () => {
     [0.9, 0.8, 0.6, 0],
     [0, 0.8, 0.8, 1]
   );
+
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2, // Smooth scroll duration (seconds)
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Easing function
+      smooth: true, // Enable smooth scrolling
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy(); // Clean up on unmount
+    };
+  }, []);
 
   return (
     <div className=" ">
